@@ -2,6 +2,7 @@
 import './globals.css'
 import { Inter } from 'next/font/google'
 import Home from './page'
+import Section2 from './section2'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -15,6 +16,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <div className='w-screen h-screen'>
      <Home/>
+     <Section2/>
      </div>
     </html>
   )
