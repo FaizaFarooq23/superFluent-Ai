@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -19,6 +20,7 @@
 body {
   color: rgb(var(--foreground-rgb));
   background: white;
+  font-family: 'Inter', sans-serif;
 }
 
 .bg-image{
@@ -27,3 +29,8 @@ body {
   background-position: right;
   background-size: cover;
 }
+.features-bg{
+  background: rgba(2, 0, 36, 0.377);
+  background: linear-gradient(90deg, rgba(0, 51, 7, 0.788) 0%, rgba(30,138,0,1) 35%, rgba(46,194,98,1) 100%);
+}
+
