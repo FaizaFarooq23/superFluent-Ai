@@ -9,7 +9,13 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        "superfluent-green": "#1E8A00",
+        "superfluent-green-emerald": "#2EC262",
+        "alice-blue": "#F3F9FE",
+      },
+    },
   },
   plugins: [],
 };
