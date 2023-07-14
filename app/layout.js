@@ -13,8 +13,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <div className="w-screen h-screen">
-        <Home/>
-
+        {children}
       </div>
     </html>
   );
