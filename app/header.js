@@ -49,17 +49,17 @@ export default function Header() {
         </Link>
       </nav>
       <div className="hidden md:flex justify-center items-center w-1/4">
-        <button className=" rounded-lg px-6 py-2 bg-[#1E8A00] text-white">
+        <Link href="/sign-up" className=" rounded-lg px-6 py-2 bg-[#1E8A00] text-white">
           Signup
-        </button>
+        </Link>
       </div>
       <div className="md:hidden">
         <button onClick={toggleMenu}>
           <AiOutlineMenu className="text-black text-3xl mr-5" />
         </button>
       </div>
-      {!menuOpen && (
-        <nav className="md:hidden flex flex-col items-center absolute top-0 left-0 w-screen h-screen p-4 bg-superfluent-green">
+      {menuOpen && (
+        <nav className="md:hidden flex flex-col items-center absolute z-50 top-0 left-0 w-screen h-screen p-4 bg-superfluent-green">
             <button onClick={toggleMenu} className="w-full">
                 <RxCross1 className="text-white text-3xl float-right" />
             </button>
@@ -78,9 +78,9 @@ export default function Header() {
           <Link href="/contact">
             <p className="block text-white hover:bg-superfluent-green-emerald py-2 px-36 rounded-lg mb-2">Contact Us</p>
           </Link>
-          <button className=" rounded-lg px-6 py-2 w-full p-2 text-white hover:bg-superfluent-green-emerald">
-            Signup
-          </button>
+          <Link href="/sign-up" >
+          <p className="block text-white hover:bg-superfluent-green-emerald py-2 px-36 rounded-lg mb-2">Sign Up</p>
+          </Link>
           <img className="h-24 w-24 mt-10" src="/images/superfleunt logo.svg" alt="superfluent-logo" />
         </nav>
       )}
