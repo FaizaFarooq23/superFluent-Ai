@@ -1,3 +1,5 @@
+"use client"
+
 import {BsEnvelope} from "react-icons/bs";
 import { BsInstagram,BsTelegram } from "react-icons/bs";
 import Link from "next/link";
