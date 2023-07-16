@@ -20,9 +20,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <main className="flex  flex-col items-center justify-between font-serif  ">
         <div className="w-full h-full">
-          <Header />
           {children}
-          <Footer/>
         </div>
       </main>
     </html>
