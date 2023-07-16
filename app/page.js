@@ -1,8 +1,14 @@
 "use client"
 
 import Features from "./components/homePage/features";
+import Footer from "./components/homePage/footer";
 import HeroSection from "./components/homePage/heroSection";
 import Section2 from "./components/homePage/section2";
+import Navbar from "./components/homePage/navbar";
+import Pricing from "./components/homePage/pricing";
+
+import RootLayout from "./layout";
+
 
 export default function Home() {
   console.log('home')
@@ -10,8 +16,9 @@ export default function Home() {
       <main className="flex  flex-col items-center justify-between">
         <div className="w-full">
           <HeroSection />
-          <Section2 />
           <Features />
+          <Pricing/>
+          <Footer />
         </div>
       </main>
   );

@@ -1,9 +1,9 @@
 import Link from 'next/link'
-import React from 'react'
 
 export default function Navbar() {
   return (
-    <div className="flex justify-between bg-transparent items-center w-full shadow-md">
+   <Navbar>
+   <div className="flex justify-between bg-transparent items-center w-full shadow-md">
     <div className="w-1/4 flex justify-center">
       <img
         className="h-24 w-24 "
@@ -26,5 +26,6 @@ export default function Navbar() {
       </Link>
     </div>
   </div>
+  </Navbar>
   )
 }
