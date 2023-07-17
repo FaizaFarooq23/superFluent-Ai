@@ -19,10 +19,10 @@ export default function UserProfile() {
     },
     {
         id: 2,
-        icon : <SlSpeech className="text-2xl mr-2 text-[#3B82F6]" />,
+        icon : <SlSpeech className="text-2xl mr-2 text-[#1E8A00]" />,
         title : "Speaking",
         percentage : 50,
-        color : "#3B82F6",
+        color : "#1E8A00",
         subtitle : "Your speaking has improved"
     },
     {
