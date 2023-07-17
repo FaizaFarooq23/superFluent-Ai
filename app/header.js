@@ -49,7 +49,7 @@ export default function Header() {
         </Link>
       </nav>
       <div className="hidden md:flex justify-center items-center w-1/4">
-        <Link href="/sign-up" className=" rounded-lg px-6 py-2 bg-[#1E8A00] text-white">
+        <Link href="/sign-up" className=" rounded-lg px-6 py-2 bg-[#2ec262] hover:bg-[#1E8A00] text-white">
           Signup
         </Link>
       </div>

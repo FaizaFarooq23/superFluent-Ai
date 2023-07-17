@@ -3,10 +3,14 @@ import "./globals.css";
 import { Inter,Roboto } from "next/font/google";
 import Header from "./header";
 import Footer from "./footer";
+import "@fortawesome/fontawesome-svg-core/styles.css";
+import { config } from "@fortawesome/fontawesome-svg-core";
+config.autoAddCss = false;
 
 const inter = Inter({ subsets: ["latin"],
 weight: ['100','200','300','400','500','600','700','800','900']
  });
+
 
 // export const metadata = {
 //   title: "Create Next App",
@@ -18,9 +22,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <main className={`flex  flex-col items-center justify-between ${inter.className} `}>
         <div className="w-full h-full">
-          <Header />
           {children}
-          <Footer/>
         </div>
       </main>
     </html>
