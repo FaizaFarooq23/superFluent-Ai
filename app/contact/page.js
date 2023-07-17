@@ -3,11 +3,13 @@
 import {BsEnvelope} from "react-icons/bs";
 import { BsInstagram,BsTelegram } from "react-icons/bs";
 import Link from "next/link";
+import BaseLayout from "../components/BaseLayout/BaseLayout";
 
 export default function ContactUs() {
   console.log("contactUs");
 
   return (
+    <BaseLayout>
     <div className="h-full w-screen flex md:flex-row flex-col md:justify-center md:items-center relative py-10">
       <div className="text-white  md:mr-10  px-10 py-5 rounded-xl md:mt-0 mt-10  text-base z-10 bg-superfluent-green-emerald">
         <h1 className="text-4xl mb-4">Contact Us</h1>
@@ -118,5 +120,6 @@ export default function ContactUs() {
         </div>
       </div>
     </div>
+    </BaseLayout>
   );
 }
